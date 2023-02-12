@@ -7,15 +7,16 @@ import { useState } from "react";
 
 export default function TrendingNow() {
  
-   var subjects=[{id:"1",Name:'Physics',bg:''}]
+   var subjects=[{id:"1",Name:'Physics',bg:'green'},{id:"1",Name:'Chemistry',bg:'green'},{id:"1",Name:'Maths',bg:'green'},{id:"1",Name:'Maths',bg:'green'}]
   const settings = {
     dots: false,
     infinite: true,
     cssEase: "linear",
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
+
     
    
     autoplaySpeed: 2000,
@@ -24,7 +25,7 @@ export default function TrendingNow() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -33,7 +34,7 @@ export default function TrendingNow() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 3,
           slidesToScroll: 1,
           initialSlide: 2,
          // infinite: true,
@@ -42,7 +43,7 @@ export default function TrendingNow() {
       {
         breakpoint: 500,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 3,
           slidesToScroll: 2,
          // infinite: true,
         },
@@ -57,9 +58,9 @@ export default function TrendingNow() {
        return(
         <>
         <div >
-             <div style={{height:'300px' ,width:'170px',border:"2px solid #000",backgroundImage:`url(${item.pic})`,backgroundSize:'cover',display:'flex',flexDirection:'column',justifyContent:'flex-end'}}>
-             <div style={{color:"grey",backgroundColor:"black",fontFamily:"Oswald",paddingLeft:5}}><p>{item.name}</p>
-             <p>{item.price}</p></div>
+             <div className="bg-lime-400 rounded-lg" style={{height:'300px' ,width:'300px',backgroundSize:'cover',display:'flex',flexDirection:'column',justifyContent:'center'}}>
+             <div style={{color:"grey",backgroundColor:"black",fontFamily:"Oswald",paddingLeft:5}}><p>{item.Name}</p>
+             </div>
              </div>
              
              </div>
