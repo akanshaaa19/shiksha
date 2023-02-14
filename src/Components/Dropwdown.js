@@ -3,82 +3,179 @@ import React from 'react'
 
 export const Dropwdown = () => {
   return (
-    <div className='flex px-4 pt-4 min-h-screen'>
-    <div className="group inline-block">
-  <button className="outline-none focus:outline-none border px-3 py-1 bg-white rounded-sm flex items-center min-w-50">
-    <span className="pr-1 font-semibold flex-1">Day 1</span>
-    <span>
-      <svg
-        className="fill-current h-4 w-4 transform group-hover:-rotate-180
-  transition duration-150 ease-in-out"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-      >
-        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-      </svg>
-    </span>
-  </button>
-  <ul
-    className="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
-  transition duration-150 ease-in-out origin-top min-w-32"
-  >
-    <li className="rounded-sm px-3 py-1 hover:bg-gray-100">Programming</li>
-    <li className="rounded-sm px-3 py-1 hover:bg-gray-100">DevOps</li>
-    
-    <li className="rounded-sm px-3 py-1 hover:bg-gray-100">Testing</li>
-    <li className="rounded-sm relative px-3 py-1 hover:bg-gray-100">
-      <button className="w-full text-left flex items-center outline-none focus:outline-none">
-        <span className="pr-1 flex-1">Langauges</span>
-        <span className="mr-auto">
-          <svg
-            className="fill-current h-4 w-4
-      transition duration-150 ease-in-out"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-          >
-            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-          </svg>
-        </span>
-      </button>
-      <ul
-        className="bg-white border rounded-sm absolute top-0 right-0 
-  transition duration-150 ease-in-out origin-top-left
-  min-w-32
-  "
-      >
-        <li className="px-3 py-1 hover:bg-gray-100">Javascript</li>
-        <li className="rounded-sm relative px-3 py-1 hover:bg-gray-100">
-          <button className="w-full text-left flex items-center outline-none focus:outline-none">
-            <span className="pr-1 flex-1">Python</span>
-            <span className="mr-auto">
-              <svg
-                className="fill-current h-4 w-4
-          transition duration-150 ease-in-out"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-              >
-                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-              </svg>
-            </span>
-          </button>
-          <ul
-            className="bg-white border rounded-sm absolute top-0 right-0 
-transition duration-150 ease-in-out origin-top-left
-min-w-32
-"
-          >
-            <li className="px-3 py-1 hover:bg-gray-100">2.7</li>
-            <li className="px-3 py-1 hover:bg-gray-100">3+</li>
-          </ul>
-        </li>
-        <li className="px-3 py-1 hover:bg-gray-100">Go</li>
-        <li className="px-3 py-1 hover:bg-gray-100">Rust</li>
-      </ul>
-    </li>
-  </ul>
-  
-</div>
-</div>
+    <section className="max-w-5xl mx-auto py-10">
+  <div>
+    <div className="flex flex-row">
+      <div className="hidden md:flex flex-col items-center">
+        <div className="w-32 py-5 border border-gray-300 rounded mr-4 uppercase flex flex-col items-center justify-center">
+          <div className="text-3xl font-black text-gray-500">Step 1</div>
+          <div className="text-gray-500 text-sm">Idea</div>
+        </div>
+        <div className="h-full border-l-4 border-transparent">
+          <div className="border-l-4 mr-4 h-full border-gray-300 border-dashed" />
+        </div>
+      </div>
+      <div className="flex-auto border rounded  border-gray-300">
+        <div className="flex md:flex-row flex-col items-center">
+          <div className="flex-auto">
+            <div className="md:hidden text-sm font-normal uppercase pt-3 pl-3 text-gray-500">
+              <span className="font-black">Step 1</span> - Idea
+            </div>
+            <div className="p-3 text-3xl text-gray-800 font">
+              Find your best idea
+            </div>
+            <div className="px-3 pb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              facilis, voluptates error alias dolorem praesentium sit soluta
+              iure incidunt labore explicabo eaque, quia architecto veritatis
+              dolores, enim consequatur nihil ipsum.
+            </div>
+          </div>
+          <div className="md:w-96 w-full p-5">
+            <img
+              src="https://image.flaticon.com/icons/svg/1330/1330216.svg"
+              alt="step 1"
+              className="object-scale-down"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="flex items-start flex-row">
+      <div className="border-t-4 border-r-4 border-transparent">
+        <div className="w-16 ml-16 h-16 border-l-4 border-gray-300 border-dashed border-b-4 rounded-bl-full" />
+      </div>
+      <div className="border-t-4 border-transparent flex-auto">
+        <div className="h-16 border-b-4 border-gray-300 border-dashed" />
+      </div>
+      <div className="w-16 mt-16 mr-16 h-16 border-r-4 border-gray-300 border-dashed border-t-4 rounded-tr-full" />
+    </div>
+    <div className="flex flex-row-reverse">
+      <div className="hidden md:flex flex-col items-center">
+        <div className="w-32 py-5 border border-gray-300 rounded ml-4 uppercase flex flex-col items-center justify-center">
+          <div className="text-3xl font-black text-gray-500">Step 2</div>
+          <div className="text-gray-500 text-sm">Collaboration</div>
+        </div>
+        <div className="h-full border-r-4 border-transparent">
+          <div className="border-l-4 ml-4 h-full border-gray-300 border-dashed" />
+        </div>
+      </div>
+      <div className="flex-auto border rounded  border-gray-300">
+        <div className="flex md:flex-row flex-col items-center">
+          <div className="flex-auto">
+            <div className="md:hidden text-sm font-normal uppercase pt-3 pl-3 text-gray-500">
+              <span className="font-black">Step 2</span> - Collaboration
+            </div>
+            <div className="p-3 text-3xl text-gray-800 font">
+              Find your team and collaborate
+            </div>
+            <div className="px-3 pb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              facilis, voluptates error alias dolorem praesentium sit soluta
+              iure incidunt labore explicabo eaque, quia architecto veritatis
+              dolores, enim consequatur nihil ipsum.
+            </div>
+          </div>
+          <div className="md:w-96 w-full p-5">
+            <img
+              src="https://image.flaticon.com/icons/svg/1330/1330216.svg"
+              alt="step 2"
+              className="object-scale-down"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="flex items-start flex-row-reverse">
+      <div className="border-t-4 border-l-4 border-transparent">
+        <div className="w-16 mr-16 h-16 border-r-4 border-gray-300 border-dashed border-b-4 rounded-br-full" />
+      </div>
+      <div className="border-t-4 border-transparent flex-auto">
+        <div className="h-16 border-b-4 border-gray-300 border-dashed" />
+      </div>
+      <div className="w-16 mt-16 ml-16 h-16 border-l-4 border-gray-300 border-dashed border-t-4 rounded-tl-full" />
+    </div>
+    <div className="flex flex-row">
+      <div className="hidden md:flex flex-col items-center">
+        <div className="w-32 py-5 border border-gray-300 rounded mr-4 uppercase flex flex-col items-center justify-center">
+          <div className="text-3xl font-black text-gray-500">Step 3</div>
+          <div className="text-gray-500 text-sm">Planification</div>
+        </div>
+        <div className="h-full border-l-4 border-transparent">
+          <div className="border-l-4 mr-4 h-full border-gray-300 border-dashed" />
+        </div>
+      </div>
+      <div className="flex-auto border rounded  border-gray-300">
+        <div className="flex md:flex-row flex-col items-center">
+          <div className="flex-auto">
+            <div className="md:hidden text-sm font-normal uppercase pt-3 pl-3 text-gray-500">
+              <span className="font-black">Step 3</span> - Planification
+            </div>
+            <div className="p-3 text-3xl text-gray-800 font">
+              Make a good plan and prepare tasks
+            </div>
+            <div className="px-3 pb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              facilis, voluptates error alias dolorem praesentium sit soluta
+              iure incidunt labore explicabo eaque, quia architecto veritatis
+              dolores, enim consequatur nihil ipsum.
+            </div>
+          </div>
+          <div className="md:w-96 w-full p-5">
+            <img
+              src="https://image.flaticon.com/icons/svg/1330/1330216.svg"
+              alt="step 3"
+              className="object-scale-down"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="flex items-start flex-row">
+      <div className="border-t-4 border-r-4 border-transparent">
+        <div className="w-16 ml-16 h-16 border-l-4 border-gray-300 border-dashed border-b-4 rounded-bl-full" />
+      </div>
+      <div className="border-t-4 border-transparent flex-auto">
+        <div className="h-16 border-b-4 border-gray-300 border-dashed" />
+      </div>
+      <div className="w-16 mt-16 mr-16 h-16 border-r-4 border-gray-300 border-dashed border-t-4 rounded-tr-full" />
+    </div>
+    <div className="flex flex-row-reverse">
+      <div className="hidden md:flex flex-col items-center">
+        <div className="w-32 py-5 border border-gray-300 rounded ml-4 uppercase flex flex-col items-center justify-center">
+          <div className="text-3xl font-black text-gray-500">Step 4</div>
+          <div className="text-gray-500 text-sm">Implementation</div>
+        </div>
+      </div>
+      <div className="flex-auto border rounded  border-gray-300">
+        <div className="flex md:flex-row flex-col items-center">
+          <div className="flex-auto">
+            <div className="md:hidden text-sm font-normal uppercase pt-3 pl-3 text-gray-500">
+              <span className="font-black">Step 4</span> - Implementation
+            </div>
+            <div className="p-3 text-3xl text-gray-800 font">
+              Execute, impletement your solution
+            </div>
+            <div className="px-3 pb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              facilis, voluptates error alias dolorem praesentium sit soluta
+              iure incidunt labore explicabo eaque, quia architecto veritatis
+              dolores, enim consequatur nihil ipsum.
+            </div>
+          </div>
+          <div className="md:w-96 w-full p-5">
+            <img
+              src="https://image.flaticon.com/icons/svg/1330/1330216.svg"
+              alt="step 4"
+              className="object-scale-down"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   )
 }
